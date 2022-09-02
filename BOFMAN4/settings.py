@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-m8^9szkwtm1d^6$k2r_2^@rn2t7lt^0tb%h2x&rz4k#ls)9)@q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bofman.id', 'localhost', '127.0.0.1:8000']
 
 
 # Application definition
@@ -115,7 +115,7 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.1/howto/static-files/
+# https://docs.djangoproject    .com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
 
