@@ -15,3 +15,10 @@ def about(request):
     contexts = {}
 
     return render(request, template, contexts)
+
+def contact(request):
+    template = 'contact.html'
+
+    contexts = {}
+
+    return render(request, template, contexts)
