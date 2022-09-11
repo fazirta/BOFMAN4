@@ -8,3 +8,10 @@ def landing(request):
     contexts = {}
 
     return render(request, template, contexts)
+
+def about(request):
+    template = 'about.html'
+
+    contexts = {}
+
+    return render(request, template, contexts)

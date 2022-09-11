@@ -7,22 +7,22 @@
         init: function () {
             
             var widgets = {
-				'exhibz-speaker.default': Exhibs.Speaker_Image_Popup,
-				'exhibz-speaker-slider.default': Exhibs.Speaker_Slider_popup,
-				'exhibz-testimonial.default': Exhibs.Testimonial_Slider,
-				'exhibz-slider.default': Exhibs.Main_Slider,
-				'exhibz-gallery-slider.default': Exhibs.Exhibz_Gallery_Slider,
-				'exhibz-event-category-slider.default': Exhibs.Exhibz_Category_Slider,
-                'exhibz-creative-speaker.default': Exhibs.Exhibz_Creative_Speaker_Widget,
-                'creative-schedule.default': Exhibs.Exhibz_Creative_Schedule_Tab
+				'bofman4-speaker.default': Exhibs.Speaker_Image_Popup,
+				'bofman4-speaker-slider.default': Exhibs.Speaker_Slider_popup,
+				'bofman4-testimonial.default': Exhibs.Testimonial_Slider,
+				'bofman4-slider.default': Exhibs.Main_Slider,
+				'bofman4-gallery-slider.default': Exhibs.bofman4_Gallery_Slider,
+				'bofman4-event-category-slider.default': Exhibs.bofman4_Category_Slider,
+                'bofman4-creative-speaker.default': Exhibs.bofman4_Creative_Speaker_Widget,
+                'creative-schedule.default': Exhibs.bofman4_Creative_Schedule_Tab
             };
             $.each(widgets, function (widget, callback) {
                 elementor.hooks.addAction('frontend/element_ready/' + widget, callback);
             });
            
 		},
-        Exhibz_Creative_Speaker_Widget: function ($scope) {
-            const container = $scope.find('.exhibz-creative-speaker');
+        bofman4_Creative_Speaker_Widget: function ($scope) {
+            const container = $scope.find('.bofman4-creative-speaker');
             if (container.length > 0) {
                 const settings = container.data('widget_settings');
                 const slider_space_between = parseInt(settings.slider_space_between);
@@ -39,7 +39,7 @@
                         prevEl: `.swiper-prev-${settings.widget_id}`,
                     },
                     pagination: {
-                        el: ".exhibz-speaker-scrollbar",
+                        el: ".bofman4-speaker-scrollbar",
                         type: "progressbar",
                     },
                     // Responsive breakpoints
@@ -66,7 +66,7 @@
             });
         },
         
-		Exhibz_Category_Slider: function ($scope) {
+		bofman4_Category_Slider: function ($scope) {
 			var $container = $scope.find('.ts-event-category-slider');
 
             if ($container.length > 0) {
@@ -231,7 +231,7 @@
 			} );
 		},
         
-        Exhibz_Gallery_Slider: function ($scope) {
+        bofman4_Gallery_Slider: function ($scope) {
             const container = $scope.find('.ts-gallery-slider');
             if (container.length > 0) {
                 const settings = container.data('widget_settings');
@@ -312,7 +312,7 @@
             }
         },
 
-        Exhibz_Creative_Schedule_Tab: function ($scope) {
+        bofman4_Creative_Schedule_Tab: function ($scope) {
             const container = $scope.find('.creative-schedule');
             const sliderSelector = $scope.find('.etn-tab-speaker-slide');
             if (container.length > 0) {

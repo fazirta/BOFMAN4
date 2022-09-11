@@ -2,13 +2,13 @@
 	<service>
 		<engineName>WordPress</engineName>
 		<engineLink>https://wordpress.org/</engineLink>
-		<homePageLink>https://demo.themewinter.com/wp/exhibz</homePageLink>
+		<homePageLink>https://bofman4.id</homePageLink>
 		<apis>
-			<api name="WordPress" blogID="1" preferred="true" apiLink="https://demo.themewinter.com/wp/exhibz/xmlrpc.php" />
-			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://demo.themewinter.com/wp/exhibz/xmlrpc.php" />
-			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://demo.themewinter.com/wp/exhibz/xmlrpc.php" />
-			<api name="Blogger" blogID="1" preferred="false" apiLink="https://demo.themewinter.com/wp/exhibz/xmlrpc.php" />
-				<api name="WP-API" blogID="1" preferred="false" apiLink="https://demo.themewinter.com/wp/exhibz/wp-json/" />
+			<api name="WordPress" blogID="1" preferred="true" apiLink="https://bofman4.id/xmlrpc.php" />
+			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://bofman4.id/xmlrpc.php" />
+			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://bofman4.id/xmlrpc.php" />
+			<api name="Blogger" blogID="1" preferred="false" apiLink="https://bofman4.id/xmlrpc.php" />
+				<api name="WP-API" blogID="1" preferred="false" apiLink="https://bofman4.id/wp-json/" />
 			</apis>
 	</service>
 </rsd>
