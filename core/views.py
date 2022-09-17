@@ -22,3 +22,10 @@ def contact(request):
     contexts = {}
 
     return render(request, template, contexts)
+
+def gallery(request):
+    template = 'gallery.html'
+
+    contexts = {}
+
+    return render(request, template, contexts)
