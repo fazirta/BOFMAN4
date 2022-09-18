@@ -1354,7 +1354,7 @@
                                                                                 </h2>
                                                                                 <h3 class="ts-pricing-price">
                                                                                     <span
-                                                                                        class="currency"></span>130.000
+                                                                                        class="currency"></span>95.000
                                                                                 </h3>
                                                                             </div>
                                                                             <div class="ts-pricing-progress">
@@ -1407,29 +1407,8 @@
                                                                             <div class="ts-pricing-header">
                                                                                 <h2 class="ts-pricing-name">Presale 2
                                                                                 </h2>
-                                                                                <h3 class="ts-pricing-price">
-                                                                                    <span
-                                                                                        class="currency"></span>175.000
+                                                                                <h3 class="ts-pricing-price" style="font-size: 42px;">Coming Soon
                                                                                 </h3>
-                                                                            </div>
-                                                                            <div class="ts-pricing-progress">
-                                                                                <p class="amount-progres-text"></p>
-                                                                                <div class="ts-progress">
-                                                                                    <div class="ts-progress-inner"
-                                                                                        style="width: 0%"></div>
-                                                                                </div>
-                                                                                <p class="ts-pricing-value">0/500
-                                                                                </p>
-                                                                            </div>
-                                                                            <div class="promotional-code">
-                                                                                <p class="promo-code-text">23-29
-                                                                                    September</p>
-                                                                                <a target="_self" rel="nofollow"
-                                                                                    href="https://www.yesplis.com/event/bofman-4"
-                                                                                    class="btn pricing-btn">Buy
-                                                                                    Ticket</a>
-                                                                                <p class="vate-text">+paket bundling
-                                                                                    395.000/3 tiket</p>
                                                                             </div>
                                                                         </div>
                                                                         <!-- ts pricing box-->
@@ -1463,7 +1442,7 @@
                                                                                 <h2 class="ts-pricing-name">Internal
                                                                                 </h2>
                                                                                 <h3 class="ts-pricing-price">
-                                                                                    <span class="currency"></span>75.000
+                                                                                    <span class="currency"></span>85.000
                                                                                 </h3>
                                                                             </div>
                                                                             <div class="ts-pricing-progress">
@@ -1547,44 +1526,42 @@
                                         data-widget_type="bofman4-latestnews.default">
                                         <div class="elementor-widget-container">
                                             <div class="row">
+                                                {% for blog in blogs %}
                                                 <div class="col-lg-4 fadeInUp">
                                                     <div class="post">
                                                         <div class="post-media post-image">
-                                                            <a href="">
+                                                            <a href="{% url 'blog_detail' blog.id %}">
                                                                 <img loading="lazy" width="360" height="202"
                                                                     style="width: 360px; height: 202px; object-fit: cover;"
-                                                                    src="{% static 'core/wp-content/uploads/2019/01/FbH8mEBVsAAO6k1.jpg' %}"
-                                                                    class="img-fluid" alt="">
+                                                                    src="{{ blog.image.url }}" class="img-fluid" alt="">
                                                             </a>
                                                         </div>
                                                         <div class="post-body">
                                                             <div class="post-meta">
                                                                 <span class="post-author">
                                                                     <i class="icon icon-user"></i>
-                                                                    <a href="">
-                                                                        BOFMAN</a>
+                                                                    <a href="{% url 'blog_detail' blog.id %}">{{ blog.author }}</a>
                                                                 </span>
 
                                                                 <span class="post-meta-date">
                                                                     <i class="icon icon-calendar"></i>
-                                                                    January 1, 2022
+                                                                    {{ blog.date }}
                                                                 </span>
                                                             </div>
                                                             <div class="entry-header">
                                                                 <h2 class="entry-title">
-                                                                    <a href="">Opening
-                                                                        BOFMAN</a>
+                                                                    <a href="{% url 'blog_detail' blog.id %}">{{ blog.name }}</a>
                                                                 </h2>
                                                             </div>
                                                             <!-- header end -->
                                                             <div class="entry-content">
-                                                                <p>The wait is over, OPENING BOFMAN4 PART 13 will be
-                                                                    held today! Sure everyon...
+                                                                <p>{{ blog.content | slice:":70" }} ...
                                                                 <p>
 
                                                             </div>
                                                             <div class="post-footer">
-                                                                <a href="" class="btn-link"> Continue <i
+                                                                <a href="{% url 'blog_detail' blog.id %}"
+                                                                    class="btn-link"> Continue <i
                                                                         class="icon icon-arrow-right"></i></a>
 
                                                             </div>
@@ -1593,97 +1570,7 @@
                                                     </div>
                                                     <!-- post end-->
                                                 </div>
-                                                <div class="col-lg-4 fadeInUp">
-                                                    <div class="post">
-                                                        <div class="post-media post-image">
-                                                            <a href="">
-                                                                <img loading="lazy" width="360" height="202"
-                                                                    style="width: 360px; height: 202px; object-fit: cover;"
-                                                                    src="{% static 'core/wp-content/uploads/2019/01/FbH8mEBVsAAO6k1.jpg' %}"
-                                                                    class="img-fluid" alt="">
-                                                            </a>
-                                                        </div>
-                                                        <div class="post-body">
-                                                            <div class="post-meta">
-                                                                <span class="post-author">
-                                                                    <i class="icon icon-user"></i>
-                                                                    <a href="">
-                                                                        BOFMAN</a>
-                                                                </span>
-
-                                                                <span class="post-meta-date">
-                                                                    <i class="icon icon-calendar"></i>
-                                                                    January 1, 2022
-                                                                </span>
-                                                            </div>
-                                                            <div class="entry-header">
-                                                                <h2 class="entry-title">
-                                                                    <a href="">Open
-                                                                        Registration</a>
-                                                                </h2>
-                                                            </div>
-                                                            <!-- header end -->
-                                                            <div class="entry-content">
-                                                                <p>Finally, the wait is over! Get ready on your mark
-                                                                    and make sure you don't miss ou...</p>
-
-                                                            </div>
-                                                            <div class="post-footer">
-                                                                <a href="" class="btn-link"> Continue <i
-                                                                        class="icon icon-arrow-right"></i></a>
-
-                                                            </div>
-                                                        </div>
-                                                        <!-- post-body end -->
-                                                    </div>
-                                                    <!-- post end-->
-                                                </div>
-                                                <div class="col-lg-4 fadeInUp">
-                                                    <div class="post">
-                                                        <div class="post-media post-image">
-                                                            <a href="">
-                                                                <img loading="lazy" width="360" height="202"
-                                                                    style="width: 360px; height: 202px; object-fit: cover;"
-                                                                    src="{% static 'core/wp-content/uploads/2019/01/FbH8mEBVsAAO6k1.jpg' %}"
-                                                                    class="img-fluid" alt="">
-                                                            </a>
-                                                        </div>
-                                                        <div class="post-body">
-                                                            <div class="post-meta">
-                                                                <span class="post-author">
-                                                                    <i class="icon icon-user"></i>
-                                                                    <a href="">
-                                                                        BOFMAN</a>
-                                                                </span>
-
-                                                                <span class="post-meta-date">
-                                                                    <i class="icon icon-calendar"></i>
-                                                                    January 1, 2022
-                                                                </span>
-                                                            </div>
-                                                            <div class="entry-header">
-                                                                <h2 class="entry-title">
-                                                                    <a href="">Meet
-                                                                        Our Mascot</a>
-                                                                </h2>
-                                                            </div>
-                                                            <!-- header end -->
-                                                            <div class="entry-content">
-                                                                <p>Greetings to all players 👋 This time, we are
-                                                                    going to introduce you to someon...</p>
-
-                                                            </div>
-                                                            <div class="post-footer">
-                                                                <a href="" class="btn-link"> Continue <i
-                                                                        class="icon icon-arrow-right"></i></a>
-
-                                                            </div>
-                                                        </div>
-                                                        <!-- post-body end -->
-                                                    </div>
-                                                    <!-- post end-->
-                                                </div>
-
+                                                {% endfor %}
                                             </div> <!-- row end -->
                                         </div>
                                     </div>

@@ -1,12 +1,17 @@
 from django.shortcuts import render
 
+from blog import models
+
 # Create your views here.
 
 
 def landing(request):
+    blogs = models.Blog.objects.all()
     template = 'landing.html'
 
-    contexts = {}
+    contexts = {
+        'blogs': blogs,
+    }
 
     return render(request, template, contexts)
 
