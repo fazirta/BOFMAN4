@@ -33,3 +33,11 @@ def gallery(request):
     contexts = {}
 
     return render(request, template, contexts)
+
+
+def merchandise(request):
+    template = 'merchandise.html'
+
+    contexts = {}
+
+    return render(request, template, contexts)
