@@ -41,3 +41,11 @@ def merchandise(request):
     contexts = {}
 
     return render(request, template, contexts)
+
+
+def timeline(request):
+    template = 'timeline.html'
+
+    contexts = {}
+
+    return render(request, template, contexts)
