@@ -195,7 +195,7 @@ body{
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-    background: #e7015e;
+    background: #d1121e;
     height: 50px;
     padding: 0 35px;
     line-height: 50px;
@@ -477,7 +477,7 @@ body{
   .wp-block-pullquote:not(.is-style-solid-color){
 	padding: 0;
 	padding-left: 40px;
-	border-left: 3px solid #e7015e;
+	border-left: 3px solid #d1121e;
 	margin: 15px 0;
 	background: transparent;
 	position: relative;
@@ -505,7 +505,7 @@ body{
 	content: '\e994';
   font-family: 'iconfont';
 	display: block;
-	color: #e7015e;
+	color: #d1121e;
 	font-size: 36px;
   }
   
@@ -534,7 +534,7 @@ body{
 	  top: 0;
 	  width: 30px;
 	  height: 2px;
-	  background: #e7015e;
+	  background: #d1121e;
 	  content: '';
 	  bottom: 0;
 	  margin: 10px 0 13px -40px;
@@ -584,7 +584,7 @@ body{
     font-family: 'iconfont';
 	  position: relative;
 	  display: block;
-	  color: #e7015e;
+	  color: #d1121e;
 	  font-size: 36px;
   }
   
