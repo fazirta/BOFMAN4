@@ -43,8 +43,8 @@ def merchandise(request):
     return render(request, template, contexts)
 
 
-def timeline(request):
-    template = 'timeline.html'
+def closing(request):
+    template = 'closing.html'
 
     contexts = {}
 
