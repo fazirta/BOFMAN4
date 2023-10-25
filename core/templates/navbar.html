@@ -1,0 +1,56 @@
+{% load static %}
+<!-- header nav start-->
+<header id="header" class="header header-transparent navbar-fixed ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-6 align-self-center">
+                <a class="navbar-brand logo" href="{% url 'landing' %}">
+                    <img style="max-width: 60%;"
+                        src="{% static 'core/wp-content/themes/bofman4/assets/images/logo/logo-light.png' %}" alt="">
+                </a>
+            </div><!-- Col end -->
+
+            <div class="col-lg-7">
+                <nav class="navbar navbar-light xs-navbar navbar-expand-lg">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-nav"
+                        aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+                    </button>
+
+                    <div id="primary-nav" class="collapse navbar-collapse justify-content-end">
+                        <ul id="main-menu" class="navbar-nav  main-menu">
+                            <li id="menu-item-996"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-996 nav-item">
+                                <a href="{% url 'about' %}" class="nav-link">About</a>
+                            </li>
+                            <li id="menu-item-1291"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1291 nav-item">
+                                <a href="{% url 'merchandise' %}" class="nav-link">Merchandise</a>
+                            </li>
+                            <li id="menu-item-1312"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1312 nav-item">
+                                <a href="{% url 'gallery' %}" class="nav-link">Gallery</a>
+                            </li>
+                            <li id="menu-item-1596"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1596 nav-item">
+                                <a href="{% url 'closing' %}" class="nav-link">closing</a>
+                            </li>
+                            <li id="menu-item-1596"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1596 nav-item">
+                                <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+
+            <div class="col-lg-2 d-none d-lg-block text-lg-right">
+                <a class="ticket-btn btn" href="https://www.yesplis.com/event/bofman-4">BUY TICKET</a>
+            </div>
+        </div><!-- Row end -->
+    </div>
+    <!--Container end -->
+</header><!-- Header end -->
