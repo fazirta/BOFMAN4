@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,8 @@ SECRET_KEY = 'django-insecure-m8^9szkwtm1d^6$k2r_2^@rn2t7lt^0tb%h2x&rz4k#ls)9)@q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'bofman4.ictman4jkt.com']
+APP_NAME = os.environ.get("FLY_APP_NAME")
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', f"{APP_NAME}.fly.dev"]
 
 
 # Application definition
